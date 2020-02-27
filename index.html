@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<script src="js/common_data.js"></script>
+<script src="js/get_user_status.js"></script>
+<script src="js/get_user_email.js"></script>
+
+
+
+<h2 id="dashboard_title">User dashboard</h2>
+
+<ul style="list-style-type:none;" id="list">
+    <li id="user_email"></li>
+    <li>  ||  </li>
+    <li id="user_info_btn"><button>User info</button></li>
+    <li>  ||  </li>
+    <li>Status:</li>
+    <li id="actual_status"></li>
+    <li id="refresh_btn"><button>[refresh]</button></li>
+    <li>  ||  </li>
+    <li>
+    <label for="selected_status">New status:</label>
+        <select id="selected_status">
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+        </select>
+    </li>
+    <li id="save_btn"><button>Save</button></li>
+
+
+</ul>
+<br>
+<p id="space_for_user_info">  </p>
+
+
+
+
+<script src="js/refresh_status.js"></script>
+<script src="js/post_status.js"></script>
+<script src="js/get_user_description.js"></script>
+<!--<script src="js/status_color.js"></script>-->
+</body>
+</html>

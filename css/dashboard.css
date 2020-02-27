@@ -1,0 +1,25 @@
+#dashboard_title {
+  font-family: helvetica;
+  margin: 45px;
+}
+
+body {
+background-color: darkGray
+}
+
+ul{
+    margin: 3px;
+
+}
+
+li {
+  float: left;
+  margin: 3px;
+}
+
+#user_email {
+  font-weight: bold;
+}
+
+
+
