@@ -19,7 +19,8 @@ const postStatus = () => {
      }
 
    xhr.open('POST', endpoint)
-   xhr.send(body)
+   xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+   xhr.send(JSON.stringify(body))
 
    }
 
@@ -28,6 +29,3 @@ const postStatus = () => {
 const save_btn = document.getElementById('save_btn');
 
 save_btn.addEventListener('click', postStatus);
-
-
-
